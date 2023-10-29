@@ -1,0 +1,14 @@
+.address{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: #ffd700;
+    height: 150px;
+}
+
+main{
+    background-color: darkgray;
+}
+
