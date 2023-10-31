@@ -24,7 +24,7 @@ def index():
         w = wallet.Wallet(bytes.fromhex(private_key))
     else:
         w = wallet.Wallet()
-    q = qrcode.make(w.address, back_color='#00000000')
+    q = qrcode.make(w.address)
     q.save(f'static/qrcode/{w.address}.png')
     return render_template('wallet.html', address=w.address, private_key=w.private_key, public_key=w.public_key)
 
